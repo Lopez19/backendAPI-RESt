@@ -9,7 +9,8 @@ const fs = require("fs");
 const cors = require("cors");
 
 // Base de datos
-require("./database");
+const { connect } = require("./database");
+connect();
 
 // Variables
 const port = process.env.PORT || 3000;
